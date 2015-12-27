@@ -19,7 +19,7 @@ check_and_run(){
         if hash pygmentize 2>/dev/null
         then
             echo
-            `whence pygmentize` -f 256 -l shell -g "$1"
+            `whence pygmentize` -f 256 -l bash -g "$1"
         else
             echo -e "$fg_no_bold[green]"
             cat $1
